@@ -207,6 +207,8 @@
     <Compile Include="Models\Order.cs" />
     <Compile Include="Models\OrderLine.cs" />
     <Compile Include="Models\Product.cs" />
+    <Compile Include="Models\ProductDbContext.cs" />
+    <Compile Include="Models\ProductDbInitializer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
