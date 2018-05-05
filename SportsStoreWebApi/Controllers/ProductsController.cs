@@ -32,6 +32,7 @@ namespace SportsStoreWebApi.Controllers
             return product == null ? (IHttpActionResult) BadRequest("No Product Found") : Ok(product);
         }
 
+        [Authorize(Roles = "Administrators")]
         public async Task<IHttpActionResult> PostProduct(Product product)
         {
             if (ModelState.IsValid)
