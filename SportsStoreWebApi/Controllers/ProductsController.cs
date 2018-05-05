@@ -17,7 +17,8 @@ namespace SportsStoreWebApi.Controllers
 
         public ProductsController()
         {
-            _repository = new ProductRepository();
+            _repository =
+                (IRepository) GlobalConfiguration.Configuration.DependencyResolver.GetService(typeof(IRepository));
         }
 
         public IEnumerable<Product> GetProducts()
